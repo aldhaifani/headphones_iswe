@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Headphones</title>
+
+		<link rel="stylesheet" href="./1-styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<link rel="stylesheet" href="./fonts/style.css" />
+	</head>
+	<body>
+		<section class="hero">
+			<div class="container">
+				<div class="navbar">
+					<div class="menu-icon" id="menu-icon">
+						<i class="fa-solid fa-bars fa-xl" id="menu-icon-bars"></i>
+						<i class="fa-solid fa-x fa-xl" id="menu-icon-x"></i>
+					</div>
+					<div class="logo">
+						<img src="./assets/logo_headphones.png" alt="logo" />
+					</div>
+					<div class="menu" id="menu">
+						<ul>
+							<li><a href="#">what we do</a></li>
+							<li><a href="#">our results</a></li>
+							<li><a href="#">contact us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="hero-content">
+					<h1 class="hero-title">Lorem ipsum dolor set amet lorem ipsum</h1>
+					<p class="hero-slogan">
+						Lorem ipsum dolor set amet lorem ipsum dolor set
+					</p>
+					<button class="hero-button">CALL TO ACTION</button>
+					<p class="hero-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="what-we-do">
+			<div class="container">
+				<h1 class="wedo-title">What we do…</h1>
+				<p class="wedo-slogan">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur.
+				</p>
+				<div class="wedo-list">
+					<ul class="outerlist">
+						<li class="outer-list-item">
+							<ul class="inner-list">
+								<li class="inner-list-item">
+									<span
+										class="holberton_school-icon-ic_sound"
+										id="wedo-icon"
+									></span>
+								</li>
+								<li class="inner-list-item"><h4>Lorem ipsum</h4></li>
+								<li class="inner-list-item">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li class="outer-list-item">
+							<ul class="inner-list">
+								<li class="inner-list-item">
+									<span
+										class="holberton_school-icon-ic_video"
+										id="wedo-icon"
+									></span>
+								</li>
+								<li class="inner-list-item"><h4>Lorem ipsum</h4></li>
+								<li class="inner-list-item">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li class="outer-list-item">
+							<ul class="inner-list">
+								<li class="inner-list-item">
+									<span
+										class="holberton_school-icon-ic_music"
+										id="wedo-icon"
+									></span>
+								</li>
+								<li class="inner-list-item"><h4>Lorem ipsum</h4></li>
+								<li class="inner-list-item">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li class="outer-list-item">
+							<ul class="inner-list">
+								<li class="inner-list-item">
+									<span
+										class="holberton_school-icon-ic_hearing"
+										id="wedo-icon"
+									></span>
+								</li>
+								<li class="inner-list-item"><h4>Lorem ipsum</h4></li>
+								<li class="inner-list-item">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<script>
+			const navbarIcons = document.getElementById('menu-icon');
+			const navbarIconBars = document.getElementById('menu-icon-bars');
+			const navbarIconX = document.getElementById('menu-icon-x');
+			const navbarMenu = document.getElementById('menu');
+
+			navbarIcons.addEventListener('click', () => {
+				console.log(navbarIconX.style.display);
+				if (navbarIconBars.style.display == '') {
+					navbarMenu.style.display = 'flex';
+					navbarIconBars.style.display = 'none';
+					navbarIconX.style.display = '';
+				} else if (navbarIconBars.style.display == 'none') {
+					navbarMenu.style.display = 'none';
+					navbarIconBars.style.display = '';
+					navbarIconX.style.display = 'none';
+				}
+			});
+		</script>
+	</body>
+</html>
