@@ -229,6 +229,75 @@ button:active {
 	margin-top: 10px auto;
 }
 
+/*=================
+    our results
+==================*/
+.our-results {
+	width: 100%;
+	height: 100vh;
+	background: url('./assets/headphones_hero_2.jpg') transparent no-repeat center
+		center / cover;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: white;
+}
+
+.results-title {
+	font-size: xx-large;
+	margin-top: 120px;
+	margin-bottom: 50px;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+.results-description {
+	width: 60vw;
+	margin: auto;
+	letter-spacing: 0.6px;
+	font-weight: 200;
+	margin: 40px auto;
+}
+
+.results-icons-container {
+	max-width: 1000px;
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.results-icons-container .outer-list {
+	width: 100%;
+	display: inline;
+	margin: auto;
+}
+.results-icons-container .outer-list .outer-list-item {
+	display: inline-block;
+	background: url('./assets/pentagone.png') no-repeat;
+	background-size: 190px 190px;
+	width: 190px;
+	height: 190px;
+	text-align: center;
+	align-items: center;
+	padding-top: 20px;
+	margin-left: 40px;
+}
+
+.results-icons-container .inner-list-item h1 {
+	font-size: 40px;
+	margin: 45px auto 15px auto;
+	letter-spacing: 1px;
+}
+
+.results-icons-container .inner-list-item p {
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 0.2px;
+	line-height: 25px;
+}
+
 /*======================
     Responsive design
 ======================*/
@@ -287,6 +356,10 @@ button:active {
 	/*==============
     	what we do
 	==============*/
+	.what-we-do {
+		height: fit-content;
+		padding-bottom: 70px;
+	}
 	.wedo-title {
 		margin-top: 100px;
 		margin-bottom: 0;
@@ -299,6 +372,29 @@ button:active {
 		margin: 0;
 	}
 	.wedo-list .outer-list-item {
+		margin-top: 50px;
+	}
+
+	/*==============
+    	our results
+	==============*/
+
+	.our-results {
+		height: fit-content;
+		padding-bottom: 70px;
+	}
+	.results-title {
+		margin-top: 100px;
+		margin-bottom: 0;
+	}
+	.results-description {
+		width: 335px;
+		margin-bottom: 0;
+	}
+	.results-icons-container {
+		margin: 0;
+	}
+	.results-icons-container .outer-list-item {
 		margin-top: 50px;
 	}
 }
